@@ -7,6 +7,10 @@
     <script type="module" src="./src/main.js"></script>
 </head>
 <body>
+<div>
+    <button id="toggle-btn">Таймер</button>
+</div>
+
 <form id="datecalc">
     <h3>Калькулятор дат</h3>
     <label>
@@ -21,6 +25,18 @@
     <p id="datecalc__result"></p>
 </form>
 
-<div></div>
+<div id="countdown">
+    <h3>Осталось до конца акции</h3>
+    <div>
+        <p>Дней: <span class="countdown-days">0</span></p>
+        <p>Часов: <span class="countdown-hours">0</span></p>
+        <p>Минут: <span class="countdown-minutes">0</span></p>
+        <p>Секунд: <span class="countdown-seconds">0</span></p>
+    </div>
+    <p id="countdown__result"></p>
+    <div>
+        <button id="countdown-start">Старт</button>&nbsp;&nbsp;&nbsp;<button id="countdown-stop">Стоп</button>
+    </div>
+</div>
 </body>
 </html>

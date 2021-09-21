@@ -1,5 +1,6 @@
 import { formatError } from "./utils.js";
-//import alarm01 from "./audio/alarm01.mp3";
+// Выдает ошибку. Так и не понял, почему
+import alarm01 from "../media/alarm01.mp3";
 import "./howler.js";
 
 function getTimeRemaining(endtime) {
@@ -72,8 +73,8 @@ const runCountdown = (selector, endtime) => {
 
             //
             let sound = new Howl({
-                //src: [alarm01]
-                src: ['src/audio/alarm01.mp3']
+                src: [alarm01]
+                //src: ['media/alarm01.mp3']
             });
             sound.play();
         }

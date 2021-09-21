@@ -4,6 +4,7 @@
 
 # production
 /build
+*/build
 
 # IDEs and editors
 /.idea
